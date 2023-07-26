@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loginsite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.3.0/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@500;600;700&family=Poppins&family=Proza+Libre&family=Roboto+Slab:wght@100;300;400;500&family=Sen:wght@700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/decoration.css" />
+  <link rel="stylesheet" href="/css/SignInPage.css" />
+  <link rel="stylesheet" href="/css/SignUpPage.css" />
+</head>
+
+<body>
+  <div class="app">
+    <div class="filter">
+      <header class="header wide">
+        <div class="header__logo">
+          <h1>GhibliStoriES</h1>
+        </div>
+        <div class="header__account">
+          <button class="header__login-btn button">
+            <span>Sign In</span>
+          </button>
+          <button class="header__signup-btn button">
+            <span>Signup</span>
+          </button>
+        </div>
+      </header>
+      <div class="banner__container">
+        <div class="banner">
+          <h1>GhibliStoriES</h1>
+          <p>Studio Ghibli (Kabushiki-gaisha Sutajio Jiburi) is one of the most influential animation studios in the
+            world. Founded in 1985 by directors Hayao Miyazaki and Isao Takahata and by producer Toshio Suzuki, Ghibli
+            should be of special interest to scholars because of its global reach,
+            cinematic force, and thematic range. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign in page -->
+  <div class="signin">
+    <div class="signin__container">
+      <h2 class="signin__title">Sign In</h2>
+
+      <div class="signin__form">
+        <form class="form__group">
+          <p class="signin__label">Email</p>
+          <input class="form__input" type="email" placeholder="Enter your email" />
+        </form>
+        <form class="form__group">
+          <p class="signin__label">Password</p>
+          <div class="form__password">
+            <input class="form__input form__input--password" type="password" placeholder="Password" required />
+            <span><i class="fas fa-eye show-js"></i></span>
+          </div>
+        </form>
+        <div class="checkbox__remember">
+          <div class="checkbox__remember--remember">
+            <input type="checkbox" id="remember-forgot" />
+            <label for="remember-forgot">Remember for 30 days </label>
+          </div>
+          <a href="#" class="signin__forgot-password signin__link signin__link--none">Forgot password</a>
+        </div>
+        <button type="submit" class="signin-btn"><a href="./index.html">Sign In</a></button>
+      </div>
+      <p class="signin__donthaveAccount">
+        Don't have an account?
+        <a href="#" class="signin__link signin__link--none">Sign Up</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Sign up page -->
+  <div class="signup">
+    <div class="signup__container">
+      <h2 class="signup__title">Create Account</h2>
+      <p class="signup__haveAccount">
+        Already have an account?
+        <a href="./assets/page/SignIn_Page.html" style="font-weight: bold"
+          class="signup__link signup__link--none">Sign-in</a>
+        instead
+      </p>
+      <div class="signup__form">
+        <form class="form__group form__group--2">
+          <input class="form__input" type="text" placeholder="First Name" />
+          <input class="form__input" type="text" placeholder="Last Name" />
+        </form>
+        <form class="form__group">
+          <input class="form__input" type="text" placeholder="Username" />
+        </form>
+        <form class="form__group form__group--2">
+          <input class="form__input" type="password" placeholder="Password" />
+          <input class="form__input" type="password" placeholder="Confirm password" />
+        </form>
+        <form class="form__group">
+          <input class="form__input" type="text" placeholder="E-mail" />
+        </form>
+        <button type="submit" class="signup-btn">
+          Sign Up
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+        <div class="form__terms">
+          <input type="checkbox" id="terms" />
+          <label for="terms">I have read and agree to
+            <a href="#" class="signup__link">Terms of Service</a>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

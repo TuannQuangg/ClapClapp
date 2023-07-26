@@ -1,0 +1,159 @@
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  line-height: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  background-image: url('../images/Ghibli world.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.filter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+}
+
+.header__logo {
+  font-family: 'Dai Banna SIL', serif;
+  font-weight: 700;
+  font-size: 18px;
+
+  text-shadow: 1px 1px 10px #000;
+
+  color: #ddd;
+}
+
+.header__account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__login-btn {
+  margin-right: 5rem;
+
+  display: flex;
+  flex-direction: row;
+
+  width: 88px;
+  height: 34px;
+
+  background-color: var(--primary);
+}
+
+.header__login-btn span {
+  width: 58px;
+  height: 24px;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+
+  color: var(--green);
+}
+
+.header__login-btn span:hover {
+  color: #ddd;
+}
+
+.header__signup-btn {
+  width: 88px;
+  height: 34px;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+  background-color: var(--green);
+}
+
+.header__signup-btn span {
+  width: 58px;
+  height: 24px;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.header__login-btn:hover {
+  background-color: transparent;
+  transition: linear 0.25s;
+}
+
+.header__signup-btn:hover {
+  background-color: transparent;
+}
+
+.navbar__signup-btn:hover span {
+  color: #ddd;
+}
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 30%;
+
+  line-height: 25px;
+  color: #ddd;
+}
+
+.banner h1 {
+  font-family: 'Dai Banna SIL', serif;
+  font-weight: 700;
+  font-size: 40px;
+
+  color: #ddd;
+}
+
+.banner p {
+  text-align: center;
+}

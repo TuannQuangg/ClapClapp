@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.3.0/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@500;600;700&family=Poppins&family=Proza+Libre&family=Roboto+Slab:wght@100;300;400;500&family=Sen:wght@700&display=swap"
+        rel="stylesheet">
+    <title>mainpage</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 126vh;
+            height: 100%;
+
+            margin-top: 30px;
+            padding-left: 180px;
+        }
+
+        swiper-slide {
+            font-size: 18px;
+            background: transparent;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            height: 25%;
+        }
+
+        swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            border-radius: 10px;
+            box-shadow: 4px 5px 10px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="header wide">
+            <h1 class="logo">GhibliStoriES</h1>
+            <div class="tooglebar"><i style="font-size: 20px;" class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="banner__container wide">
+            <div class="banner">
+                <h1 class="banner__heading">Watch the best
+                </h1>
+                <h1 class="banner__heading1">of Studio Ghibli
+                </h1>
+                <h1 class="banner__heading2">now
+                </h1>
+                <p>Remmenber or find out about all the fantastic stories in this universe !</p>
+                <button>WATCH NOW</button>
+            </div>
+            <img class="banner__poster" src="./images/from up on poppy hill.jpg" alt="">
+        </div>
+
+        <!-- <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4" space-between="30" centered-slides="true">
+            
+        </swiper-container> -->
+
+        <div class="content__container">
+            <a href="./library.html">Library </a>
+            <swiper-container class="mySwiper" init="false">
+                <swiper-slide>
+                    <img src="./images/chihiro.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img class="swiper-slide" src="./images/baron.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/hotarunohaka.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/howl.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/kaguyahime.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/karigurashi.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/kazetachinu.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/laputa.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/majo.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/mononoke.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/nausicaa.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/ponyo.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/ged.jpg" alt="">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/totoro.jpg" alt="">
+                </swiper-slide>
+            </swiper-container>
+            <div class="content__text">
+                <p>The story is set in 1936 in Yokohama. Kokukiro Manor sits on a hill overlooking the harbour. A 16
+                    year-old girl, Uni, lives in that house. Every morning she...</p>
+
+                <button>SEE MORE</button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+        <div class="popup">
+            <div class="popup__container">
+                <div class="popup__container-heading">
+                    <h3 class="popup__container-heading-h3">2001</h3>
+                    <h1 class="popup__container-heading-h1">Spirited Away</h1>
+                    <div class="popup__container-btn">
+                        <button type="" class="watch-btn">watch trailer</button>
+                        <button type="" class="imdb-btn">imdb</button>
+                    </div>
+                </div>
+                <div class="popup__container-png">
+                    <img src="./images/chihirooo.png" />
+                </div>
+                <div class="popup__container-introduce">
+                    Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+                    ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
+                    ex non excepteur duis sunt velit enim. Voluptate laboris sint
+                    cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+                    </p>
+                    <p class="popup__container-author">
+                        <strong>Director: </strong>Hayao Miyazaki
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const swiperEl = document.querySelector('swiper-container')
+        Object.assign(swiperEl, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+        swiperEl.initialize();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

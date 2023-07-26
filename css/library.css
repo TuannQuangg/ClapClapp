@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.spirited__container {
+    background-image: url("../images/Library/chihiro011.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.totoro__container {
+    background-image: url("../images/Library/totoro029.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.totoro__container .content {
+    color: #ddd;
+}
+
+.kiki__container {
+    background-image: url("../images/Library/majo038.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.kiki__container .content h1 {
+    width: 40%;
+
+}
+
+.content {
+
+    font-family: 'Poppins', sans-serif;
+
+    margin-left: 180px;
+
+    color: #ddd;
+}
+
+.content h1 {
+    width: 30%;
+
+    font-weight: 700;
+    font-size: 50px;
+
+    margin-bottom: 30px;
+}
+
+.content p {
+    width: 30%;
+}
+
+.content button {
+    background-color: darkslategrey;
+    padding: 10px 50px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.content button:hover {
+    background-color: aquamarine;
+
+    color: #999;
+
+    transition: ease-in-out 0.5s;
+}
+
+.howl__container {
+    background-image: url("../images/Library/howl001.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.howl__content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.howl__content {
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    width: 30%;
+
+    margin-right: 110px;
+
+    margin-top: 100px;
+
+    color: #ddd;
+}
+
+.howl__content h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.howl__content button {
+    background-color: darkslategrey;
+    padding: 10px 50px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+    color: #212121;
+}
+
+.howl__content button:hover {
+    background-color: aquamarine;
+
+    color: #999;
+
+    transition: ease-in-out 0.5s;
+}
+
+.naussica__container {
+    background-image: url("../images/Library/nausicaa002.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.naussica__content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.naussica__content {
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    width: 30%;
+
+    margin-right: 110px;
+
+    margin-top: 100px;
+
+    color: #ddd;
+}
+
+.naussica__content h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.naussica__content button {
+    background-color: darkslategrey;
+    padding: 10px 50px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+    color: #212121;
+}
+
+.naussica__content button:hover {
+    background-color: aquamarine;
+
+    color: #999;
+
+    transition: ease-in-out 0.5s;
+}
